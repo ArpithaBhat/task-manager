@@ -2,4 +2,3 @@ __pycache__/
 tasks.json
 venv/
 .python-version
-requirements.txt

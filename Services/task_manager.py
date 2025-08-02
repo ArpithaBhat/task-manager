@@ -168,7 +168,7 @@ class TaskManager:
         """Save tasks to JSON file"""
         try:
             # Convert Task objects to dictionaries for JSON serialization
-            tasks_data = [Task.to_dict() for task in self.tasks]
+            tasks_data = [task.to_dict() for task in self.tasks]
             with open(self.filename, 'w') as f:
                 json.dump(tasks_data, f, indent=2)
         except Exception as e:
